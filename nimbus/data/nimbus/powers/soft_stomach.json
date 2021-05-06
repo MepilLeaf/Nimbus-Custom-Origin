@@ -1,0 +1,13 @@
+{
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:meat"
+            }
+        ]
+    },
+    "name": "Soft Stomach",
+    "description": "Your stomach can't handle meat, so it's probably best you stick to eating other things."
+}

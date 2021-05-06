@@ -1,0 +1,22 @@
+{
+    "type": "origins:multiple",
+    "no_shield": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "origins:shields"
+            }
+        }
+    },
+    "less_hearts": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "value": -4,
+            "operation": "addition"
+        }
+    },
+    "name": "Weak",
+    "description": "You are naturally weaker. As a result of this you are unable to use shields and you have 2 less hearts."
+}

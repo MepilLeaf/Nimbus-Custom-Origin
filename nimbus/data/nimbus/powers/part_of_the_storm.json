@@ -1,0 +1,15 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:in_rain"
+        }
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 4.0
+    },
+    "name": "Part Of The Storm",
+    "description": "When in rain you feel the strength of the sky, which allows you to deal more damage."
+}

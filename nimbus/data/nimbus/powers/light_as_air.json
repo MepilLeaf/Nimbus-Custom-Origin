@@ -1,0 +1,218 @@
+{
+    "type": "origins:multiple",
+    "armor": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "change_armor": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:armor_value",
+                            "comparison": ">",
+                            "compare_to": 2
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "chest",
+                        "item_condition": {
+                            "type": "origins:armor_value",
+                            "comparison": ">",
+                            "compare_to": 5
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "legs",
+                        "item_condition": {
+                            "type": "origins:armor_value",
+                            "comparison": ">",
+                            "compare_to": 4
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "feet",
+                        "item_condition": {
+                            "type": "origins:armor_value",
+                            "comparison": ">",
+                            "compare_to": 1
+                        }
+                    }
+                ]
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "nimbus:light_as_air_armor",
+                "change": 1
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "nimbus:light_as_air_armor",
+                "change": -1
+            }
+        },
+        "interval": 1
+    },
+    "base_speed": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:speed",
+                "duration": 2,
+                "amplifier": 0,
+                "show_icon": false,
+                "is_ambient": true,
+                "show_particles": false
+            }
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "nimbus:light_as_air_armor",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "base_jump": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:jump_boost",
+                "duration": 2,
+                "amplifier": 0,
+                "show_icon": false,
+                "is_ambient": true,
+                "show_particles": false
+            }
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "nimbus:light_as_air_armor",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "high_speed": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:speed",
+                "duration": 2,
+                "amplifier": 1,
+                "show_icon": false,
+                "is_ambient": true,
+                "show_particles": false
+            }
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "nimbus:light_as_air_armor",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:height",
+                        "comparison": ">=",
+                        "compare_to": 100
+                    }
+                }
+            ]
+        }
+    },
+    "high_jump": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:jump_boost",
+                "duration": 2,
+                "amplifier": 1,
+                "show_icon": false,
+                "is_ambient": true,
+                "show_particles": false
+            }
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "nimbus:light_as_air_armor",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:height",
+                        "comparison": ">=",
+                        "compare_to": 100
+                    }
+                }
+            ]
+        }
+    },
+    "slowness": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 2,
+                "amplifier": 1,
+                "show_icon": false,
+                "is_ambient": true,
+                "show_particles": false
+            }
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "nimbus:light_as_air_armor",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "name": "Light As Air",
+    "description": "You naturally run faster and jump higher, which increases when you are above y level 100, but if you wear heavy armor you will have a hard time moving around."
+}

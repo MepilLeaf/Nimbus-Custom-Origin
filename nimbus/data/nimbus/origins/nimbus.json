@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "nimbus:cloudlike",
+        "nimbus:attributes",
+        "nimbus:soft_stomach",
+        "nimbus:light_as_air",
+        "nimbus:from_the_sky",
+        "nimbus:part_of_the_storm",
+        "nimbus:weak"
+    ],
+    "icon": "minecraft:white_wool",
+    "order": 1,
+    "impact": 2,
+    "name": "Nimbus",
+    "description": "Light and Nimble, as a cloud you possess great mobility and can use the weather to your advantage."
+}

@@ -74,7 +74,7 @@
             "effect": {
                 "effect": "minecraft:speed",
                 "duration": 2,
-                "amplifier": 0,
+                "amplifier": 1,
                 "show_icon": false,
                 "is_ambient": true,
                 "show_particles": false
@@ -122,7 +122,7 @@
             "effect": {
                 "effect": "minecraft:speed",
                 "duration": 2,
-                "amplifier": 1,
+                "amplifier": 2,
                 "show_icon": false,
                 "is_ambient": true,
                 "show_particles": false
@@ -189,30 +189,6 @@
             ]
         }
     },
-    "slowness": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:slowness",
-                "duration": 2,
-                "amplifier": 1,
-                "show_icon": false,
-                "is_ambient": true,
-                "show_particles": false
-            }
-        },
-        "hud_render": {
-            "should_render": false
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "nimbus:light_as_air_armor",
-            "comparison": "==",
-            "compare_to": 1
-        }
-    },
     "name": "Light As Air",
-    "description": "You naturally run faster and jump higher, which increases when you are above y level 100, but if you wear heavy armor you will have a hard time moving around."
+    "description": "If you aren't wearing heavy armor you will run faster and jump higher, which will increases when you are above y level 100."
 }

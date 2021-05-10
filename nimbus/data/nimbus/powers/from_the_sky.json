@@ -1,19 +1,5 @@
 {
     "type": "origins:multiple",
-    "less_damage": {
-        "type": "origins:modify_damage_dealt",
-        "damage_condition": {
-            "type": "origins:attacker",
-            "entity_condition": {
-                "type": "origins:exposed_to_sky",
-                "inverted": true
-            }
-        },
-        "modifier": {
-            "operation": "addition",
-            "value": -4.0
-        }
-    },
     "sleep_height": {
         "type": "origins:prevent_sleep",
         "block_condition": {
@@ -60,5 +46,5 @@
         }
     },
     "name": "From The Sky",
-    "description": "Your home is the sky, so not being able to see it makes you uneasy. You deal less damage when you aren't exposed to it. You can only sleep if you are exposed to it and you are above y level 100, but you gain regen if you are in the sky."
+    "description": "Your home is the sky, so you are only able to sleep when you are above y level 100 and exposed to it, but being high up will give you regeneration"
 }

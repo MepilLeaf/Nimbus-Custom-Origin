@@ -3,7 +3,7 @@ A nimbus origin for the Minecraft origins mod
 
 
 Origin Description:
-Light and Nimble, as a cloud you possess great mobility and can use the weather to your advantage.
+From the sky, you are gifted with great mobility and love spots that are high up.
 
 
 Powers And Attributes:

@@ -3,18 +3,18 @@ A nimbus origin for the Minecraft origins mod
 
 
 Origin Description:
-Light and Nimble, as a cloud you possess great mobility and can use the weather to your advantage.
+From the sky, you are gifted with great mobility and love spots that are high up.
 
 
 Powers And Attributes:
 
 Cloudlike: As you are part cloud, you have inherited the ability to fly for a short period of time, but if you are wearing heavy armor you wont be able to stay in the air for very long.
 
-From The Sky: Your home is the sky, so not being able to see it makes you uneasy. You deal less damage when you aren't exposed to it. You can only sleep if you are exposed to it and you are above y level 100, but you gain regen if you are in the sky.
+From The Sky: Your home is the sky, so you are only able to sleep when you are above y level 100 and exposed to it, but being high up will give you regeneration.
 
-Light As Air: You naturally run faster and jump higher, which increases when you are above y level 100, but if you wear heavy armor you will have a hard time moving around.
+Light As Air: If you aren't wearing heavy armor you will run faster and jump higher, which will increases when you are above y level 100.
 
-Part Of The Storm: When in rain you feel the strength of the sky, which allows you to deal more damage.
+Natural Evaporation: Because you are a cloud, tropical biomes with high humidity will make you stronger.
 
 Soft Stomach: Your stomach can't handle meat, so it's probably best you stick to eating other things.
 

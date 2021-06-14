@@ -6,11 +6,12 @@
         "nimbus:light_as_air",
         "nimbus:from_the_sky",
         "nimbus:natural_evaporation",
-        "nimbus:weak"
+        "nimbus:weak",
+        "nimbus:updraft"
     ],
     "icon": "minecraft:white_wool",
     "order": 1,
     "impact": 2,
     "name": "Nimbus",
-    "description": "Light and Nimble, as a cloud you possess great mobility and can use the weather to your advantage."
+    "description": "From the sky, you are gifted with great mobility and love spots that are high up."
 }

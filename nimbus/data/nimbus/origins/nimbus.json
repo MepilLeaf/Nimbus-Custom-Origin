@@ -8,7 +8,7 @@
         "nimbus:natural_evaporation",
         "nimbus:weak",
         "nimbus:updraft",
-        "numbus:fall_immunity"
+        "nimbus:fall_immunity"
     ],
     "icon": "minecraft:white_wool",
     "order": 1,

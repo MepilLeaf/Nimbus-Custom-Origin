@@ -10,8 +10,8 @@
         }
     },
     "modifier": {
-        "operation": "addition",
-        "value": 4.0
+        "operation": "multiply_total",
+        "value": 1.2
     },
     "name": "Natural Evaporation",
     "description": "Because you are a cloud, tropical biomes with high humidity will make you stronger."

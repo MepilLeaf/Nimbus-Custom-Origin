@@ -5,8 +5,10 @@
         "nimbus:soft_stomach",
         "nimbus:light_as_air",
         "nimbus:from_the_sky",
-        "nimbus:natural_evaporation",
-        "nimbus:weak"
+        "nimbus:weak",
+        "nimbus:updraft",
+        "nimbus:fall_immunity",
+        "nimbus:natural_evaporation"
     ],
     "icon": "minecraft:white_wool",
     "order": 1,

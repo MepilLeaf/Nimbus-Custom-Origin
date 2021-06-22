@@ -7,7 +7,7 @@
             "effect": {
                 "effect": "minecraft:levitation",
                 "duration": 2,
-                "amplifier": 3,
+                "amplifier": 4,
                 "show_icon": false,
                 "is_ambient": true,
                 "show_particles": false
@@ -349,7 +349,7 @@
             "else_action": {
                 "type": "origins:change_resource",
                 "resource": "nimbus:cloudlike_float_meter_resource",
-                "change": -4
+                "change": -6
             }
         },
         "cooldown": 2,

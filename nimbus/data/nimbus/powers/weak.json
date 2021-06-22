@@ -17,6 +17,132 @@
             "operation": "addition"
         }
     },
+    "head_armor_attack_speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.4
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">=",
+                "compare_to": 3
+            }
+        }
+    },
+    "chest_armor_attack_speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.3
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">",
+                "compare_to": 5
+            }
+        }
+    },
+    "chest_armor_attack_speed_extra": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.2
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">=",
+                "compare_to": 8
+            }
+        }
+    },
+    "legs_armor_attack_speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.3
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "legs",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">",
+                "compare_to": 4
+            }
+        }
+    },
+    "legs_armor_attack_speed_extra": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.2
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "legs",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">=",
+                "compare_to": 6
+            }
+        }
+    },
+    "feet_armor_attack_speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.3
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">",
+                "compare_to": 1
+            }
+        }
+    },
+    "feet_armor_attack_speed_extra": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": -0.2
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">=",
+                "compare_to": 3
+            }
+        }
+    },
     "name": "Weak",
-    "description": "You are naturally weaker. As a result of this you are unable to use shields and you have 2 less hearts."
+    "description": "You are naturally weaker. As a result of this you are unable to use shields, you have 2 less hearts, and if you wear heavy armor the weight disables you from attacking."
 }

@@ -5,10 +5,17 @@
         "nimbus:soft_stomach",
         "nimbus:light_as_air",
         "nimbus:from_the_sky",
+<<<<<<< HEAD
         "nimbus:weak",
         "nimbus:updraft",
         "nimbus:fall_immunity",
         "nimbus:natural_evaporation"
+=======
+        "nimbus:natural_evaporation",
+        "nimbus:weak",
+        "nimbus:updraft",
+        "nimbus:fall_immunity"
+>>>>>>> d8031cbaa28ff25a56a21376be46ea9db018b63b
     ],
     "icon": "minecraft:white_wool",
     "order": 1,

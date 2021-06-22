@@ -14,8 +14,10 @@ From The Sky: Your home is the sky, so you are only able to sleep when you are a
 
 Light As Air: If you aren't wearing heavy armor you will run faster and jump higher, which will increases when you are above y level 100.
 
-Natural Evaporation: Because you are a cloud, tropical biomes with high humidity will make you stronger.
+Natural Evaporation: Because you are a cloud, biomes with high humidity will make you stronger.
 
 Soft Stomach: Your stomach can't handle meat, so it's probably best you stick to eating other things.
 
-Weak: You are naturally weaker. As a result of this you are unable to use shields and you have 2 less hearts.
+Weak: You are naturally weaker. As a result of this you are unable to use shields, you have 2 less hearts, and if you are wearing heavy armor your attacks become much slower.
+
+Updraft: When you fly a strong wind current surrounds you causing all projectiles coming from you to be carried up in the air.

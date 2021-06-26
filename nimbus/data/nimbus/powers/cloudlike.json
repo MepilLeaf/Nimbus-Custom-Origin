@@ -52,7 +52,7 @@
             "effect": {
                 "effect": "minecraft:levitation",
                 "duration": 2,
-                "amplifier": 255,
+                "amplifier": -1,
                 "show_icon": false,
                 "is_ambient": true,
                 "show_particles": false

@@ -6,9 +6,9 @@
         "nimbus:light_as_air",
         "nimbus:from_the_sky",
         "nimbus:weak",
-        "nimbus:updraft",
         "nimbus:fall_immunity",
-        "nimbus:natural_evaporation"
+        "nimbus:natural_evaporation",
+        "nimbus:air_affinity"
     ],
     "icon": "minecraft:white_wool",
     "order": 1,

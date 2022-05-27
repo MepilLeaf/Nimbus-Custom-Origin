@@ -1,0 +1,127 @@
+{
+  "type": "origins:multiple",
+  "use_meter": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 140,
+    "start_value": 140,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+      "bar_index": 16,
+      "condition": {
+        "type": "origins:power_active",
+        "power": "nimbus:nurture_toggle"
+      }
+    }
+  },
+  "use_meter_inactive": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 140,
+    "start_value": 140,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+      "bar_index": 17,
+      "condition": {
+        "type": "origins:power_active",
+        "power": "nimbus:nurture_toggle",
+        "inverted": true
+      }
+    }
+  },
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.secondary_active",
+      "continuous": false
+    }
+  },
+  "use_cd": {
+    "type": "origins:cooldown",
+    "cooldown": 20,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "cooldawn": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "nimbus:nurture_use_meter",
+          "change": 20
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "nimbus:nurture_use_meter_inactive",
+          "change": 20
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "nimbus:nurture_use_cd",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "use": {
+    "type": "origins:action_on_block_use",
+    "item_condition": {
+      "type": "origins:empty"
+    },
+    "hands": [
+      "main_hand"
+    ],
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "nimbus:nurture_toggle"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "nimbus:nurture_use_meter",
+          "comparison": ">=",
+          "compare_to": 20
+        }
+      ]
+    },
+    "block_action": {
+      "type": "origins:bonemeal",
+      "effects": true
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "nimbus:nurture_use_meter",
+          "change": -20
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "nimbus:nurture_use_meter_inactive",
+          "change": -20
+        },
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "nimbus:nurture_use_cd"
+        }
+      ]
+    }
+  },
+  "name": "Nurture",
+  "description": "Using the moisture within your body you can accelerate plant growth with your bare hands.",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/toggle.png",
+      "text": "Toggle with your secondary active key."
+    }
+  ]
+}

@@ -365,6 +365,40 @@
             "continuous": true
         }
     },
+    "air_speed": {
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "nimbus:light_as_air_armor",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "nimbus:cloudlike_float_meter_resource",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "nimbus:cloudlike_toggle"
+                }
+            ]
+        }
+    },
     "name": "Cloudlike",
-    "description": "As you are part cloud, you have inherited the ability to fly for a short period of time, but if you are wearing heavy armor you wont be able to stay in the air for very long."
+    "description": "As you are part cloud, you have inherited the ability to fly for a short period of time, but if you are wearing heavy armor you wont be able to stay in the air for very long.",
+    "badges": [
+        {
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": "Toggle with your primary active key."
+        }
+    ]
 }

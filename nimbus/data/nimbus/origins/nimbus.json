@@ -3,12 +3,14 @@
         "nimbus:cloudlike",
         "nimbus:attributes",
         "nimbus:soft_stomach",
+        "nimbus:nurture",
         "nimbus:light_as_air",
         "nimbus:from_the_sky",
         "nimbus:weak",
         "nimbus:fall_immunity",
         "nimbus:natural_evaporation",
-        "nimbus:air_affinity"
+        "nimbus:air_affinity",
+        "nimbus:gentle_hands"
     ],
     "icon": "minecraft:white_wool",
     "order": 1,

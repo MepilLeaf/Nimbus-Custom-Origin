@@ -31,8 +31,8 @@
             "equipment_slot": "head",
             "item_condition": {
                 "type": "origins:armor_value",
-                "comparison": ">=",
-                "compare_to": 3
+                "comparison": ">",
+                "compare_to": 2
             }
         }
     },
@@ -50,7 +50,7 @@
             "item_condition": {
                 "type": "origins:armor_value",
                 "comparison": ">",
-                "compare_to": 5
+                "compare_to": 6
             }
         }
     },
@@ -86,7 +86,7 @@
             "item_condition": {
                 "type": "origins:armor_value",
                 "comparison": ">",
-                "compare_to": 4
+                "compare_to": 5
             }
         }
     },
@@ -122,7 +122,7 @@
             "item_condition": {
                 "type": "origins:armor_value",
                 "comparison": ">",
-                "compare_to": 1
+                "compare_to": 2
             }
         }
     },

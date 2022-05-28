@@ -46,7 +46,7 @@
   },
   "cooldawn": {
     "type": "origins:action_over_time",
-    "interval": 60,
+    "interval": 40,
     "entity_action": {
       "type": "origins:and",
       "actions": [

@@ -9,8 +9,7 @@
         "nimbus:weak",
         "nimbus:fall_immunity",
         "nimbus:natural_evaporation",
-        "nimbus:air_affinity",
-        "nimbus:gentle_hands"
+        "nimbus:air_affinity"
     ],
     "icon": "minecraft:white_wool",
     "order": 1,

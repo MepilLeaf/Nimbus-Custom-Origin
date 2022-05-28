@@ -68,127 +68,19 @@
         "interval": 1
     },
     "base_speed": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:speed",
-                "duration": 2,
-                "amplifier": 1,
-                "show_icon": false,
-                "is_ambient": true,
-                "show_particles": false
-            }
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.3
         },
-        "hud_render": {
-            "should_render": false
-        },
-        "interval": 1,
         "condition": {
             "type": "origins:resource",
             "resource": "nimbus:light_as_air_armor",
             "comparison": "==",
             "compare_to": 0
-        }
-    },
-    "base_jump": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:jump_boost",
-                "duration": 2,
-                "amplifier": 0,
-                "show_icon": false,
-                "is_ambient": true,
-                "show_particles": false
-            }
-        },
-        "hud_render": {
-            "should_render": false
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "nimbus:light_as_air_armor",
-            "comparison": "==",
-            "compare_to": 0
-        }
-    },
-    "high_speed": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:speed",
-                "duration": 2,
-                "amplifier": 2,
-                "show_icon": false,
-                "is_ambient": true,
-                "show_particles": false
-            }
-        },
-        "hud_render": {
-            "should_render": false
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "nimbus:light_as_air_armor",
-                    "comparison": "==",
-                    "compare_to": 0
-                },
-                {
-                    "type": "origins:in_block",
-                    "block_condition": {
-                        "type": "origins:height",
-                        "comparison": ">=",
-                        "compare_to": 100
-                    }
-                }
-            ]
-        }
-    },
-    "high_jump": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:jump_boost",
-                "duration": 2,
-                "amplifier": 1,
-                "show_icon": false,
-                "is_ambient": true,
-                "show_particles": false
-            }
-        },
-        "hud_render": {
-            "should_render": false
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "nimbus:light_as_air_armor",
-                    "comparison": "==",
-                    "compare_to": 0
-                },
-                {
-                    "type": "origins:in_block",
-                    "block_condition": {
-                        "type": "origins:height",
-                        "comparison": ">=",
-                        "compare_to": 100
-                    }
-                }
-            ]
         }
     },
     "name": "Light As Air",
-    "description": "If you aren't wearing heavy armor you will run faster and jump higher, which will increases when you are above y level 100."
+    "description": "If you aren't wearing heavy armor you will be able to move quicker."
 }

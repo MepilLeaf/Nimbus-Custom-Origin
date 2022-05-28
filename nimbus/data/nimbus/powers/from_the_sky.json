@@ -41,10 +41,10 @@
             "block_condition": {
                 "type": "origins:height",
                 "comparison": ">=",
-                "compare_to": 100
+                "compare_to": 200
             }
         }
     },
     "name": "From The Sky",
-    "description": "Your home is the sky, so you are only able to sleep when you are above y level 100 and exposed to it, but being high up will give you regeneration."
+    "description": "Your home is the sky, so you are only able to sleep when you are above y level 100 and exposed to it, but being above y level 200 will give you regeneration."
 }

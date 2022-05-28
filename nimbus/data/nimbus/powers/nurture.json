@@ -117,7 +117,7 @@
     }
   },
   "name": "Nurture",
-  "description": "Using the moisture within your body you can accelerate plant growth with your bare hands.",
+  "description": "Using the moisture within your body, you can accelerate plant growth with your bare hands.",
   "badges": [
     {
       "sprite": "origins:textures/gui/badge/toggle.png",

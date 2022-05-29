@@ -369,7 +369,7 @@
         "type": "origins:modify_air_speed",
         "modifier": {
             "operation": "addition",
-            "value": 0.016
+            "value": 0.02
         },
         "condition": {
             "type": "origins:and",
